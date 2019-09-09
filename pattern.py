@@ -7,3 +7,14 @@ for i in range(1,n+1):
         else:
             print(' ',end=' ')
     print()
+    
+    
+n=5
+
+for i in range(1,n+1):
+    for j in range(1,2*n):
+        if (i+j)>=(n+1) and (i+j)<=(n+1)+(2*(i-1)) and ((n%2==0 and (i+j)%2!=0) or (n%2!=0 and ((i+j)%2==0))):
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
